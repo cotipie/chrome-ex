@@ -12,5 +12,6 @@ $(document).on('dblclick','.userContent',function(){
 	md = md.replace(/<\/span>/g,'');
 	md = md.replace(/<br>/g,'\n');
 	//md = md.replace(/\"/g,'');
+	$(this).addClass('userContent2');
 	$(this).html(marked(md));
 });
