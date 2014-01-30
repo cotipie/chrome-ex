@@ -5,7 +5,7 @@
 ///////////////////////////////////////////////////////////
  
 
-$('.userContent').dblclick(function(){
+$(document).on('dblclick','.userContent',function(){
 	$(this).find('.text_exposed_hide').remove();
 	var md = $(this).find('.text_exposed_root').html();
 	md = md.replace(/<span class=\"text_exposed_show\">/g,'');
